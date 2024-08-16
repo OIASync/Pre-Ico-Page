@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centered Layout</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        /* Phase 1 container */
+        .phase-1-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* HTML content container */
+        .html-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Photo container */
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .photo-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive design for small screens */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .photo-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .photo-container img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-  
 <body>
     <!-- Container for the Phase 1 image -->
     <div class="phase-1-container">
@@ -26,8 +79,7 @@
         <a href="https://ibb.co/Qf8s4PN">
             <img src="https://i.ibb.co/mGvQ39q/Why-Participate-In-Phase-1.png" alt="Why-Participate-In-Phase-1" border="0" class="photo">
         </a>
-        <a href="https://ibb.co/YQCDB8J"><img src="https://i.ibb.co/yP9hF5K/Regulation-and-Security.png" alt="Regulation-and-Security" border="0" alt="Photo 2" class="photo"></a>
+        <a href="https://ibb.co/YQCDB8J"><img src="https://i.ibb.co/yP9hF5K/Regulation-and-Security.png" alt="Regulation-and-Security" border="0" class="photo"></a>
     </div>
-
 </body>
 </html>
